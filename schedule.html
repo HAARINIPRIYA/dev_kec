@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule - Kongu Engineering College DevOps Program</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="font-sans text-gray-800">
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 w-full bg-white shadow-lg z-50">
+        <div class="max-w-7xl mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg flex items-center justify-center text-white font-bold">
+                        K
+                    </div>
+                    <span class="text-xl font-bold text-gray-800 hidden sm:inline">KEC DevOps</span>
+                </div>
+
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" class="text-gray-700 hover:text-blue-600 transition font-medium">Home</a>
+                    <a href="about.html" class="text-gray-700 hover:text-blue-600 transition font-medium">About</a>
+                    <a href="schedule.html" class="text-blue-600 font-medium">Schedule</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-blue-600 transition font-medium">Contact</a>
+                    <a href="register.html" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition">Register</a>
+                    <a href="login.html" class="border border-blue-600 text-blue-600 px-4 py-2 rounded-lg hover:bg-blue-50 transition">Login</a>
+                </div>
+
+                <button id="mobileMenuBtn" class="md:hidden flex items-center justify-center w-10 h-10 rounded-lg hover:bg-gray-100">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <div id="mobileMenu" class="hidden md:hidden mt-4 pb-4 space-y-3">
+                <a href="index.html" class="block text-gray-700 hover:text-blue-600 transition font-medium py-2">Home</a>
+                <a href="about.html" class="block text-gray-700 hover:text-blue-600 transition font-medium py-2">About</a>
+                <a href="schedule.html" class="block text-blue-600 font-medium py-2">Schedule</a>
+                <a href="contact.html" class="block text-gray-700 hover:text-blue-600 transition font-medium py-2">Contact</a>
+                <a href="register.html" class="block bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition text-center">Register</a>
+                <a href="login.html" class="block border border-blue-600 text-blue-600 px-4 py-2 rounded-lg hover:bg-blue-50 transition text-center">Login</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="pt-32 pb-12 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <h1 class="text-5xl font-bold mb-4">Program Schedule</h1>
+            <p class="text-xl text-blue-100">View our upcoming batches and course timeline</p>
+        </div>
+    </section>
+
+    <!-- Upcoming Batches -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-16">Upcoming Batches</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Batch 1 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition">
+                    <div class="bg-gradient-to-r from-blue-600 to-blue-400 p-6 text-white">
+                        <h3 class="text-2xl font-bold">March 2026 Batch</h3>
+                        <p class="text-blue-100">Next Intake</p>
+                    </div>
+                    <div class="p-8">
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <span class="text-2xl mr-4">📅</span>
+                                <div>
+                                    <p class="font-bold">Start Date</p>
+                                    <p class="text-gray-600">March 2, 2026</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <span class="text-2xl mr-4">⏱️</span>
+                                <div>
+                                    <p class="font-bold">Duration</p>
+                                    <p class="text-gray-600">12 Weeks</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <span class="text-2xl mr-4">👥</span>
+                                <div>
+                                    <p class="font-bold">Seats Available</p>
+                                    <p class="text-gray-600">45 out of 50</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <span class="text-2xl mr-4">💰</span>
+                                <div>
+                                    <p class="font-bold">Fee</p>
+                                    <p class="text-gray-600">₹25,000</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="w-full mt-6 bg-blue-600 text-white py-2 rounded-lg font-semibold hover:bg-blue-700 transition">Register for this Batch</button>
+                    </div>
+                </div>
+
+                <!-- Batch 2 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition">
+                    <div class="bg-gradient-to-r from-purple-600 to-purple-400 p-6 text-white">
+                        <h3 class="text-2xl font-bold">May 2026 Batch</h3>
+                        <p class="text-purple-100">Extended Batch Available</p>
+                    </div>
+                    <div class="p-8">
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <span class="text-2xl mr-4">📅</span>
+                                <div>
+                                    <p class="font-bold">Start Date</p>
+                                    <p class="text-gray-600">May 4, 2026</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <span class="text-2xl mr-4">⏱️</span>
+                                <div>
+                                    <p class="font-bold">Duration</p>
+                                    <p class="text-gray-600">12 Weeks</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <span class="text-2xl mr-4">👥</span>
+                                <div>
+                                    <p class="font-bold">Seats Available</p>
+                                    <p class="text-gray-600">50 out of 50</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <span class="text-2xl mr-4">💰</span>
+                                <div>
+                                    <p class="font-bold">Fee</p>
+                                    <p class="text-gray-600">₹25,000</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="w-full mt-6 bg-purple-600 text-white py-2 rounded-lg font-semibold hover:bg-purple-700 transition">Register for this Batch</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Timeline -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-16">12-Week Course Structure</h2>
+            
+            <div class="max-w-4xl mx-auto">
+                <!-- Week 1-2 -->
+                <div class="flex gap-8 mb-12">
+                    <div class="flex flex-col items-center">
+                        <div class="w-16 h-16 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-2xl">1-2</div>
+                        <div class="w-1 h-24 bg-blue-600 mt-4"></div>
+                    </div>
+                    <div class="pb-12 flex-1">
+                        <h3 class="text-2xl font-bold mb-3">Weeks 1-2: DevOps Fundamentals</h3>
+                        <ul class="space-y-2 text-gray-600">
+                            <li>✓ Introduction to DevOps culture and principles</li>
+                            <li>✓ Linux basics and command line mastery</li>
+                            <li>✓ Version control with Git and GitHub</li>
+                            <li>✓ Environment setup and tools installation</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Week 3-4 -->
+                <div class="flex gap-8 mb-12">
+                    <div class="flex flex-col items-center">
+                        <div class="w-16 h-16 bg-purple-600 rounded-lg flex items-center justify-center text-white font-bold text-2xl">3-4</div>
+                        <div class="w-1 h-24 bg-purple-600 mt-4"></div>
+                    </div>
+                    <div class="pb-12 flex-1">
+                        <h3 class="text-2xl font-bold mb-3">Weeks 3-4: Docker Containerization</h3>
+                        <ul class="space-y-2 text-gray-600">
+                            <li>✓ Docker architecture and concepts</li>
+                            <li>✓ Creating and managing Docker containers</li>
+                            <li>✓ Docker images and registries</li>
+                            <li>✓ Docker Compose and networking</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Week 5-6 -->
+                <div class="flex gap-8 mb-12">
+                    <div class="flex flex-col items-center">
+                        <div class="w-16 h-16 bg-green-600 rounded-lg flex items-center justify-center text-white font-bold text-2xl">5-6</div>
+                        <div class="w-1 h-24 bg-green-600 mt-4"></div>
+                    </div>
+                    <div class="pb-12 flex-1">
+                        <h3 class="text-2xl font-bold mb-3">Weeks 5-6: Kubernetes Orchestration</h3>
+                        <ul class="space-y-2 text-gray-600">
+                            <li>✓ Kubernetes architecture and core concepts</li>
+                            <li>✓ Pods, services, and deployments</li>
+                            <li>✓ ConfigMaps and storage management</li>
+                            <li>✓ Scaling and load balancing</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Week 7-8 -->
+                <div class="flex gap-8 mb-12">
+                    <div class="flex flex-col items-center">
+                        <div class="w-16 h-16 bg-red-600 rounded-lg flex items-center justify-center text-white font-bold text-2xl">7-8</div>
+                        <div class="w-1 h-24 bg-red-600 mt-4"></div>
+                    </div>
+                    <div class="pb-12 flex-1">
+                        <h3 class="text-2xl font-bold mb-3">Weeks 7-8: CI/CD Pipelines</h3>
+                        <ul class="space-y-2 text-gray-600">
+                            <li>✓ Jenkins setup and pipeline development</li>
+                            <li>✓ GitLab CI/CD and GitHub Actions</li>
+                            <li>✓ Continuous Integration best practices</li>
+                            <li>✓ Deployment automation</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Week 9-10 -->
+                <div class="flex gap-8 mb-12">
+                    <div class="flex flex-col items-center">
+                        <div class="w-16 h-16 bg-yellow-600 rounded-lg flex items-center justify-center text-white font-bold text-2xl">9-10</div>
+                        <div class="w-1 h-24 bg-yellow-600 mt-4"></div>
+                    </div>
+                    <div class="pb-12 flex-1">
+                        <h3 class="text-2xl font-bold mb-3">Weeks 9-10: Cloud & Infrastructure</h3>
+                        <ul class="space-y-2 text-gray-600">
+                            <li>✓ AWS fundamentals and services</li>
+                            <li>✓ Infrastructure as Code (Terraform)</li>
+                            <li>✓ Cloud deployment strategies</li>
+                            <li>✓ Monitoring and logging with ELK stack</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Week 11-12 -->
+                <div class="flex gap-8">
+                    <div class="flex flex-col items-center">
+                        <div class="w-16 h-16 bg-indigo-600 rounded-lg flex items-center justify-center text-white font-bold text-2xl">11-12</div>
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="text-2xl font-bold mb-3">Weeks 11-12: Capstone Projects</h3>
+                        <ul class="space-y-2 text-gray-600">
+                            <li>✓ Real-world project development</li>
+                            <li>✓ Security best practices</li>
+                            <li>✓ Performance optimization</li>
+                            <li>✓ Final assessment and certification</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Important Dates -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-16">Important Dates</h2>
+            
+            <div class="max-w-3xl mx-auto space-y-6">
+                <div class="bg-white p-8 rounded-xl shadow-lg border-l-4 border-blue-600">
+                    <div class="flex items-start justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Early Bird Registration</h3>
+                            <p class="text-gray-600">Get 10% discount on registration fees</p>
+                        </div>
+                        <span class="bg-blue-100 text-blue-600 px-4 py-2 rounded-lg font-semibold whitespace-nowrap">Till Feb 28</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-lg border-l-4 border-green-600">
+                    <div class="flex items-start justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Last Registration Date (March Batch)</h3>
+                            <p class="text-gray-600">Final date to register for March 2026 batch</p>
+                        </div>
+                        <span class="bg-green-100 text-green-600 px-4 py-2 rounded-lg font-semibold whitespace-nowrap">Feb 15</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-lg border-l-4 border-purple-600">
+                    <div class="flex items-start justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Orientation & Course Kick-off</h3>
+                            <p class="text-gray-600">Program begins with orientation and introduction</p>
+                        </div>
+                        <span class="bg-purple-100 text-purple-600 px-4 py-2 rounded-lg font-semibold whitespace-nowrap">Mar 2</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-lg border-l-4 border-red-600">
+                    <div class="flex items-start justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Mid-Program Assessment</h3>
+                            <p class="text-gray-600">Progress evaluation at week 6</p>
+                        </div>
+                        <span class="bg-red-100 text-red-600 px-4 py-2 rounded-lg font-semibold whitespace-nowrap">Apr 13</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-lg border-l-4 border-yellow-600">
+                    <div class="flex items-start justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Final Projects & Presentation</h3>
+                            <p class="text-gray-600">Capstone project presentations and final exam</p>
+                        </div>
+                        <span class="bg-yellow-100 text-yellow-600 px-4 py-2 rounded-lg font-semibold whitespace-nowrap">May 25</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-lg border-l-4 border-indigo-600">
+                    <div class="flex items-start justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Certification & Results</h3>
+                            <p class="text-gray-600">Certificate distribution and placement assistance begins</p>
+                        </div>
+                        <span class="bg-indigo-100 text-indigo-600 px-4 py-2 rounded-lg font-semibold whitespace-nowrap">Jun 1</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learning Mode Details -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-16">Learning Modes</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-xl">
+                    <h3 class="text-2xl font-bold mb-4 text-blue-600">🌍 Online</h3>
+                    <ul class="space-y-3 text-gray-700">
+                        <li>✓ Learn at your own pace</li>
+                        <li>✓ Live sessions twice a week</li>
+                        <li>✓ Access to recorded lectures</li>
+                        <li>✓ Flexible timing for labs</li>
+                        <li>✓ Community support 24/7</li>
+                    </ul>
+                    <p class="text-sm text-gray-600 mt-4">Best for: Working professionals</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-purple-50 to-purple-100 p-8 rounded-xl">
+                    <h3 class="text-2xl font-bold mb-4 text-purple-600">🏢 Offline</h3>
+                    <ul class="space-y-3 text-gray-700">
+                        <li>✓ In-person classroom sessions</li>
+                        <li>✓ Daily practical training</li>
+                        <li>✓ Direct mentor interaction</li>
+                        <li>✓ Peer learning and networking</li>
+                        <li>✓ Campus facilities access</li>
+                    </ul>
+                    <p class="text-sm text-gray-600 mt-4">Best for: Full-time students</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-green-50 to-green-100 p-8 rounded-xl">
+                    <h3 class="text-2xl font-bold mb-4 text-green-600">🔄 Hybrid</h3>
+                    <ul class="space-y-3 text-gray-700">
+                        <li>✓ Mix of online and offline</li>
+                        <li>✓ 3 days online, 2 days offline</li>
+                        <li>✓ Flexible semester structure</li>
+                        <li>✓ Best of both worlds</li>
+                        <li>✓ Balanced learning approach</li>
+                    </ul>
+                    <p class="text-sm text-gray-600 mt-4">Best for: Flexible learners</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h4 class="text-white font-bold mb-4">About</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="about.html" class="hover:text-white transition">About Us</a></li>
+                        <li><a href="#" class="hover:text-white transition">Our Mission</a></li>
+                        <li><a href="#" class="hover:text-white transition">Testimonials</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Program</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="schedule.html" class="hover:text-white transition">Schedule</a></li>
+                        <li><a href="register.html" class="hover:text-white transition">Register</a></li>
+                        <li><a href="#" class="hover:text-white transition">Curriculum</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Support</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="contact.html" class="hover:text-white transition">Contact Us</a></li>
+                        <li><a href="#" class="hover:text-white transition">FAQ</a></li>
+                        <li><a href="#" class="hover:text-white transition">Help Center</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Connect</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-white transition">Facebook</a>
+                        <a href="#" class="hover:text-white transition">Twitter</a>
+                        <a href="#" class="hover:text-white transition">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 text-center text-sm">
+                <p>&copy; 2026 Kongu Engineering College & GUVI. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

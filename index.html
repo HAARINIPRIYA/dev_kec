@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kongu Engineering College - DevOps Program</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="font-sans text-gray-800">
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 w-full bg-white shadow-lg z-50">
+        <div class="max-w-7xl mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg flex items-center justify-center text-white font-bold">
+                        K
+                    </div>
+                    <span class="text-xl font-bold text-gray-800 hidden sm:inline">KEC DevOps</span>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" class="text-gray-700 hover:text-blue-600 transition font-medium">Home</a>
+                    <a href="about.html" class="text-gray-700 hover:text-blue-600 transition font-medium">About</a>
+                    <a href="schedule.html" class="text-gray-700 hover:text-blue-600 transition font-medium">Schedule</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-blue-600 transition font-medium">Contact</a>
+                    <a href="register.html" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition">Register</a>
+                    <a href="login.html" class="border border-blue-600 text-blue-600 px-4 py-2 rounded-lg hover:bg-blue-50 transition">Login</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobileMenuBtn" class="md:hidden flex items-center justify-center w-10 h-10 rounded-lg hover:bg-gray-100">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div id="mobileMenu" class="hidden md:hidden mt-4 pb-4 space-y-3">
+                <a href="index.html" class="block text-gray-700 hover:text-blue-600 transition font-medium py-2">Home</a>
+                <a href="about.html" class="block text-gray-700 hover:text-blue-600 transition font-medium py-2">About</a>
+                <a href="schedule.html" class="block text-gray-700 hover:text-blue-600 transition font-medium py-2">Schedule</a>
+                <a href="contact.html" class="block text-gray-700 hover:text-blue-600 transition font-medium py-2">Contact</a>
+                <a href="register.html" class="block bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition text-center">Register</a>
+                <a href="login.html" class="block border border-blue-600 text-blue-600 px-4 py-2 rounded-lg hover:bg-blue-50 transition text-center">Login</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <section class="pt-32 pb-20 bg-gradient-to-br from-blue-600 via-blue-500 to-purple-600 text-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">Master DevOps Excellence</h1>
+                    <p class="text-xl mb-8 text-blue-100">Learn industry-leading DevOps practices in collaboration with GUVI. Become a DevOps expert and launch your tech career.</p>
+                    <div class="flex space-x-4">
+                        <a href="register.html" class="bg-white text-blue-600 px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition">Get Started</a>
+                        <a href="about.html" class="border-2 border-white text-white px-8 py-3 rounded-lg font-bold hover:bg-white hover:text-blue-600 transition">Learn More</a>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div class="w-64 h-64 mx-auto bg-white bg-opacity-10 rounded-2xl flex items-center justify-center">
+                        <span class="text-6xl">🚀</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Program Highlights -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-16">Program Highlights</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition p-8">
+                    <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+                        <span class="text-3xl">📚</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Comprehensive Curriculum</h3>
+                    <p class="text-gray-600">Learn Docker, Kubernetes, CI/CD pipelines, cloud platforms, and infrastructure as code with hands-on projects.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition p-8">
+                    <div class="w-16 h-16 bg-green-100 rounded-lg flex items-center justify-center mb-6">
+                        <span class="text-3xl">💼</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Industry Expert Mentors</h3>
+                    <p class="text-gray-600">Learn from professionals working at top tech companies. Get real-world insights and career guidance.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition p-8">
+                    <div class="w-16 h-16 bg-purple-100 rounded-lg flex items-center justify-center mb-6">
+                        <span class="text-3xl">🏆</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Certification & Placement</h3>
+                    <p class="text-gray-600">Earn recognized DevOps certification. Get job-ready and access our placement assistance program.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Information -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-16">Key Information</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="space-y-6">
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                            <span class="text-xl">⏱️</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Duration</h3>
+                            <p class="text-gray-600">12 weeks intensive program with flexible learning options</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
+                            <span class="text-xl">👥</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Batch Size</h3>
+                            <p class="text-gray-600">Limited to 50 students for personalized attention</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center">
+                            <span class="text-xl">💰</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Fee Structure</h3>
+                            <p class="text-gray-600">₹25,000 with flexible payment options available</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-6">
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center">
+                            <span class="text-xl">🎯</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Eligibility</h3>
+                            <p class="text-gray-600">Open to engineering students and IT professionals</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center">
+                            <span class="text-xl">🌐</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Mode</h3>
+                            <p class="text-gray-600">Online, Offline, and Hybrid learning options</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center">
+                            <span class="text-xl">📱</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Support</h3>
+                            <p class="text-gray-600">24/7 support from mentors and peer community</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collaboration Section -->
+    <section class="py-20 bg-gradient-to-r from-blue-50 to-purple-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-16">Our Partnership</h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="text-center p-8 bg-white rounded-xl shadow-lg">
+                    <div class="w-32 h-32 mx-auto bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mb-4">
+                        <span class="text-6xl">🏛️</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2">Kongu Engineering College</h3>
+                    <p class="text-gray-600">A premier engineering institution with decades of excellence in technical education</p>
+                </div>
+
+                <div class="text-center p-8 bg-white rounded-xl shadow-lg">
+                    <div class="w-32 h-32 mx-auto bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center mb-4">
+                        <span class="text-6xl">🎓</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2">GUVI - VIT</h3>
+                    <p class="text-gray-600">India's leading online learning platform specializing in tech skills and career development</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-6">Ready to Transform Your Career?</h2>
+            <p class="text-xl mb-8 text-blue-100">Join hundreds of students who have successfully completed the DevOps program</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="register.html" class="bg-white text-blue-600 px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition">Register Now</a>
+                <a href="contact.html" class="border-2 border-white text-white px-8 py-3 rounded-lg font-bold hover:bg-white hover:text-blue-600 transition">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h4 class="text-white font-bold mb-4">About</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="about.html" class="hover:text-white transition">About Us</a></li>
+                        <li><a href="#" class="hover:text-white transition">Our Mission</a></li>
+                        <li><a href="#" class="hover:text-white transition">Testimonials</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Program</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="schedule.html" class="hover:text-white transition">Schedule</a></li>
+                        <li><a href="register.html" class="hover:text-white transition">Register</a></li>
+                        <li><a href="#" class="hover:text-white transition">Curriculum</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Support</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="contact.html" class="hover:text-white transition">Contact Us</a></li>
+                        <li><a href="#" class="hover:text-white transition">FAQ</a></li>
+                        <li><a href="#" class="hover:text-white transition">Help Center</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Connect</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-white transition">Facebook</a>
+                        <a href="#" class="hover:text-white transition">Twitter</a>
+                        <a href="#" class="hover:text-white transition">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 text-center text-sm">
+                <p>&copy; 2026 Kongu Engineering College & GUVI. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
