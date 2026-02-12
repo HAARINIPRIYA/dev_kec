@@ -34,7 +34,7 @@ jobs:
           username: ubuntu
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
-            docker pull keerthikav/react-vite-app:latest
+            docker pull haarini26/guvi_kec:latest
             docker stop react-container || true
             docker rm react-container || true
-            docker run -d -p 80:80 --name react-container keerthikav/react-vite-app:latest
+            docker run -d -p 80:80 --name react-container haarini26/guvi_kec:latest
