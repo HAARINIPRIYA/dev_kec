@@ -4,8 +4,8 @@
   "description": "Kongu Engineering College DevOps Program Website",
   "main": "index.html",
   "scripts": {
-    "start": "python -m http.server 8000",
-    "dev": "python -m http.server 8000"
+    "start": "node server.js",
+    "dev": "node server.js"
   },
   "keywords": [
     "devops",
@@ -15,5 +15,8 @@
     "guvi"
   ],
   "author": "Kongu Engineering College",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
 }
